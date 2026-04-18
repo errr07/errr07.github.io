@@ -10839,7 +10839,7 @@ textarea.form-control-lg {
     /* Rule to target the header image specifically */
     .portfolio-header img {
         /* ADJUST THIS VALUE to make the logo smaller or larger */
-        max-width: 100px; /* Reduced from 140px in previous steps */
+        max-width: 80px; /* Reduced from 140px in previous steps */
         
         /* Keeps the image in proportion */
         height: auto;
