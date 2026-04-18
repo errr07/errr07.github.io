@@ -10854,9 +10854,3 @@ textarea.form-control-lg {
     margin-bottom: 2rem; 
 }
 
-/* Optional: Matching the ArcGIS logo styling from our previous steps */
-.portfolio-header img {
-    max-width: 140px;
-    height: auto;
-    margin-bottom: 15px;
-}
