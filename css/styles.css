@@ -10832,10 +10832,13 @@ textarea.form-control-lg {
 }
 
 
-.portfolio-header {
-    /* 1. Use the RAW link from GitHub */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-                    
+/* Custom Portfolio Header - UPDATED FOR DARK BLUE BACKGROUND */
+.bg-image-full.portfolio-header {
+    /* Set to a solid dark midnight blue color */
+    background-color: #001f3f; 
+
+    /* Remove any background image gradients, but keep the size settings */
+    background-image: none; 
     
     background-size: cover;
     background-position: center;
@@ -10843,13 +10846,17 @@ textarea.form-control-lg {
     min-height: 450px; 
     display: flex;
     align-items: center;
-    justify-content: center;
 
-    /* 2. The Darker Gray Border */
+    /* DARKER GRAY BORDER - Keeps the border we created previously */
     border-bottom: 8px solid #333333; 
+
+    /* Adds a small space below the border for a cleaner separation */
+    margin-bottom: 2rem; 
 }
 
-/* This ensures the content inside stays centered */
-.portfolio-header .container {
-    width: 100%;
+/* Optional: Matching the ArcGIS logo styling from our previous steps */
+.portfolio-header img {
+    max-width: 140px;
+    height: auto;
+    margin-bottom: 15px;
 }
