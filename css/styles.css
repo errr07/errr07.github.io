@@ -10842,7 +10842,7 @@ textarea.form-control-lg {
     background-color: #001f3f !important; /* Midnight Blue */
     background-image: none !important;    /* Removes existing pics */
     border-bottom: 8px solid #333333;    /* Dark Charcoal Border */
-    min-height: 400px;
+    min-height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
