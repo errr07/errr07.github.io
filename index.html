@@ -8,31 +8,47 @@
         <title>Erika Diaz ArcGIS Project</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <link href="css/styles.css" rel="stylesheet" />
-        <style>
-            /* Custom styles for your ArcGIS sections */
-            .map-section {
-                padding: 80px 0;
-                border-bottom: 1px solid #dee2e6;
-            }
-            .content-box {
-                border: 2px solid #555555; /* Dark gray border */
-                padding: 25px;
-                margin-bottom: 20px;
-                border-radius: 8px;
-                background-color: #ffffff;
-            }
-            .map-img {
-                width: 100%;
-                height: auto;
-                border: 1px solid #ddd;
-                border-radius: 4px;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            }
-            /* Ensures the section looks good on light gray backgrounds */
-            .bg-custom-light {
-                background-color: #fcfcfc;
-            }
-        </style>
+<style>
+    /* Custom styles for ArcGIS sections */
+    .map-section {
+        padding: 80px 0;
+        border-bottom: 1px solid #dee2e6;
+    }
+    .content-box {
+        border: 2px solid #555555; 
+        padding: 25px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        background-color: #ffffff;
+    }
+    .map-img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .bg-custom-light {
+        background-color: #fcfcfc;
+    }
+
+    /* FORCED HEADER UPDATES */
+    .portfolio-header {
+        background-color: #001f3f !important; /* Dark Blue */
+        background-image: none !important;
+        border-bottom: 8px solid #333333 !important; /* Darker Gray Border */
+    }
+
+    /* FORCED LOGO SIZE */
+    .header-logo {
+        width: 70px !important; /* Change this number to adjust size */
+        height: auto !important;
+        margin-bottom: 15px !important;
+    }
+</style>
+
+
+        
     </head>
     <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -55,7 +71,10 @@
 
 <header class="py-5 bg-image-full portfolio-header">
     <div class="container text-center my-5">
-        <img src="https://cla.temple.edu/tech-notes/assets/img/arcgis-pro.png" alt="ArcGIS Logo" />
+        <img src="https://cla.temple.edu/tech-notes/assets/img/arcgis-pro.png" 
+             alt="ArcGIS Logo" 
+             class="header-logo" />
+             
         <h1 class="text-white fs-3 fw-bolder">ArcGIS Portfolio</h1>
         <p class="text-white-50 mb-0">Fundamentals of GIS Final Project</p>
     </div>
