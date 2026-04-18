@@ -10851,7 +10851,7 @@ textarea.form-control-lg {
 /* 2. Adjust the ArcGIS Logo Size */
 .portfolio-header img {
     /* ADJUST THIS NUMBER to make the logo smaller or larger */
-    max-width: 80px !important; 
+    max-width: 60px !important; 
     height: auto;
     margin-bottom: 15px;
     display: block;
