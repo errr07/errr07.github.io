@@ -33,19 +33,19 @@
     }
 
     /* FORCED HEADER UPDATES */
-    .portfolio-header {
-        background-color: #001f3f !important; /* Dark Blue */
+    header.portfolio-header {
+        background-color: #001f3f !important;
         background-image: none !important;
-        border-bottom: 8px solid #333333 !important; /* Darker Gray Border */
+        border-bottom: 8px solid #333333 !important;
     }
 
-    /* FORCED LOGO SIZE - ADJUSTED TO BE SMALLER */
-    .header-logo {
-        width: 100px !important;      /* CHANGED from 400px to 70px */
-        max-width: 100px !important;  /* Added for extra safety */
+    /* THE ULTIMATE FIX: This targets the image inside the specific header */
+    header.portfolio-header .container img.header-logo {
+        width: 100px !important;      /* Change this number to adjust size */
+        max-width: 80px !important;
         height: auto !important;
         margin-bottom: 15px !important;
-        display: inline-block !important; /* Ensures it respects centering */
+        display: inline-block !important;
     }
 </style>
 
