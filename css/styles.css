@@ -10834,8 +10834,8 @@ textarea.form-control-lg {
 
 .portfolio-header {
     /* 1. Use the RAW link from GitHub */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                      url('https://github.com/errr07/errr07.github.io/blob/main/assets/YOUR_IMAGE.png?raw=true');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+                    
     
     background-size: cover;
     background-position: center;
