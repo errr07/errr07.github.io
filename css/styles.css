@@ -10833,20 +10833,35 @@ textarea.form-control-lg {
 
 
 
+/* ==========================================================================
+   CUSTOM PORTFOLIO STYLES
+   ========================================================================== */
 
-    /* ... your other custom styles ... */
+/* 1. Header Background & Border */
+.portfolio-header {
+    background-color: #001f3f !important; /* Midnight Blue */
+    background-image: none !important;    /* Removes existing pics */
+    border-bottom: 8px solid #333333;    /* Dark Charcoal Border */
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    /* Rule to target the header image specifically */
-    .portfolio-header img {
-        /* ADJUST THIS VALUE to make the logo smaller or larger */
-        max-width: 10px; /* Reduced from 140px in previous steps */
-        
-        /* Keeps the image in proportion */
-        height: auto;
-        
-        /* Optional: adds space between the image and the text below it */
-        margin-bottom: 1rem; 
-    }
+/* 2. Adjust the ArcGIS Logo Size */
+.portfolio-header img {
+    /* ADJUST THIS NUMBER to make the logo smaller or larger */
+    max-width: 80px !important; 
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    /* ... rest of your custom styles ... */
-
+/* 3. Ensure the text stays white and centered */
+.portfolio-header h1, 
+.portfolio-header p {
+    text-align: center;
+    width: 100%;
+}
