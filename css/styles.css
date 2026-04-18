@@ -10832,26 +10832,25 @@ textarea.form-control-lg {
 }
 
 
-
 /* Custom Portfolio Header */
 .bg-image-full.portfolio-header {
-    /* Replace the URL below with your Raw GitHub Link */
+    /* Replace with your Raw GitHub Link */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                      url("https://cla.temple.edu/tech-notes/assets/img/arcgis-pro.png" alt="ArcGIS Logo");
+                      url('https://cla.temple.edu/tech-notes/assets/img/arcgis-pro.png');
     
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
-    /* Adjust height: 400px is standard, but you can use 50vh for half-screen */
     min-height: 400px; 
-    
-    /* Centers the text vertically */
     display: flex;
     align-items: center;
+
+    /* DARKER GRAY BORDER */
+    /* This #333 is darker than the #555 used for your paragraph boxes */
+    border-bottom: 8px solid #333333; 
 }
 
-/* Optional: Control the ArcGIS logo size */
+/* Optional: Matching the ArcGIS logo styling */
 .portfolio-header img {
     max-width: 140px;
     height: auto;
