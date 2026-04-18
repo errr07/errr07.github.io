@@ -594,7 +594,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {
@@ -10830,27 +10830,3 @@ textarea.form-control-lg {
   background-position: center;
   background-size: cover;
 }
-
-
-/* Custom Portfolio Header - UPDATED FOR DARK BLUE BACKGROUND */
-.bg-image-full.portfolio-header {
-    /* Set to a solid dark midnight blue color */
-    background-color: #001f3f; 
-
-    /* Remove any background image gradients, but keep the size settings */
-    background-image: none; 
-    
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 400px; 
-    display: flex;
-    align-items: center;
-
-    /* DARKER GRAY BORDER - Keeps the border we created previously */
-    border-bottom: 8px solid #333333; 
-
-    /* Adds a small space below the border for a cleaner separation */
-    margin-bottom: 2rem; 
-}
-
