@@ -10844,7 +10844,7 @@ textarea.form-control-lg {
     background-repeat: no-repeat;
     
     /* Adjust height: 400px is standard, but you can use 50vh for half-screen */
-    min-height: 450px; 
+    min-height: 400px; 
     
     /* Centers the text vertically */
     display: flex;
