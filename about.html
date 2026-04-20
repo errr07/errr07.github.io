@@ -6,9 +6,29 @@
         <title>About - Erika Diaz</title>
         <link href="css/styles.css" rel="stylesheet" />
         <style>
-            .about-container { padding: 80px 0; min-height: 70vh; }
-            .content-box { border: 2px solid #555555; padding: 25px; border-radius: 8px; background-color: #ffffff; }
-            header.portfolio-header { background-color: #001f3f !important; }
+            /* Increased padding for a larger feel */
+            .about-container { 
+                padding: 100px 0; 
+                min-height: 80vh; 
+            }
+            /* Made the box larger and increased font sizes */
+            .content-box { 
+                border: 2px solid #555555; 
+                padding: 40px; 
+                border-radius: 12px; 
+                background-color: #ffffff;
+                font-size: 1.2rem; /* Makes the paragraph text larger */
+                line-height: 1.8;
+            }
+            .content-box h2 {
+                font-size: 2.5rem; /* Larger heading */
+                margin-bottom: 25px;
+                font-weight: 700;
+            }
+            header.portfolio-header { 
+                background-color: #001f3f !important; 
+                padding: 80px 0 !important; /* Bigger header section */
+            }
         </style>
     </head>
     <body>
@@ -26,21 +46,23 @@
 
         <header class="py-5 portfolio-header">
             <div class="container text-center">
-                <h1 class="text-white fs-3 fw-bolder">About This Project</h1>
+                <h1 class="text-white fs-1 fw-bolder">About This Project</h1>
             </div>
         </header>
 
         <section class="about-container bg-light">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="content-box shadow-sm">
-                            <h3>Project Overview</h3>
+                    <div class="col-lg-10"> 
+                        <div class="content-box shadow">
+                            <h2>The Purpose</h2>
                             <p>
-                                This ArcGIS portfolio showcases some of my work in the Fundamentals of GIS course at Temple University. 
-                                Through these projects, I explored complex spatial datasets, mastered various map projections, 
-                                and developed a deep understanding of cartographic storytelling. My focus was on 
-                                transforming raw geospatial data into actionable visual insights.
+                                This portfolio serves as a comprehensive look into my work within the Fundamentals of GIS. 
+                                By integrating technical ArcGIS Pro proficiency with data-driven analysis, I have 
+                                developed a series of maps that address complex spatial questions. From understanding 
+                                the nuances of coordinate systems to performing vector analysis in urban environments, 
+                                this project demonstrates the intersection of geography, data analytics, and 
+                                visual communication.
                             </p>
                         </div>
                     </div>
