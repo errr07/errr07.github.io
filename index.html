@@ -134,22 +134,32 @@ header.portfolio-header {
     <div class="container">
         <div class="row align-items-center flex-lg-row-reverse">
             <div class="col-lg-7">
-                <img src="https://github.com/errr07/errr07.github.io/blob/main/assets/Lab6.png?raw=true" alt="Philadelphia" class="map-img" />
+                <img src="https://raw.githubusercontent.com/errr07/errr07.github.io/main/assets/Lab6.png" alt="Philadelphia Healthy Food Store Suitability Map" class="map-img" />
             </div>
             <div class="col-lg-5">
                 <div class="content-box">
-                    <p><strong>Key Findings:</strong> [Detail the results of your second map and what the visualization reveals.]</p>
+                    <h5 class="mb-3"><strong>Analysis Overview</strong></h5>
+                    <p>This analysis identifies optimal locations for new healthy food retailers in Philadelphia. The workflow utilizes multi-criteria decision-making to find areas that maximize community impact and accessibility while avoiding market saturation.</p>
+                    
+                    <p class="small mb-2"><strong>Spatial Criteria Applied:</strong></p>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1"><i class="bi bi-check2-circle text-success"></i> <strong>Investment:</strong> Must be within a Philadelphia Empowerment Zone.</li>
+                        <li class="mb-1"><i class="bi bi-check2-circle text-success"></i> <strong>Transit Access:</strong> Within 2,000 feet of a subway or regional rail station.</li>
+                        <li class="mb-1"><i class="bi bi-x-circle text-danger"></i> <strong>Market Gap:</strong> Not within 1,200 feet of existing farmers markets or Healthy Corner Stores.</li>
+                        <li><i class="bi bi-plus-circle text-primary"></i> <strong>Scale:</strong> Prioritized larger contiguous areas to facilitate property acquisition.</li>
+                    </ul>
                 </div>
+                
                 <div class="content-box">
                     <h5 class="mb-3"><strong>Skills Learned</strong></h5>
                     <ul class="skills-list">
                         <li>
                             <strong>Vector Analysis Operations:</strong> 
-                            Executed complex spatial workflows using Buffer, Dissolve, Union, Intersect, and Erase tools.
+                            Executed complex spatial workflows using Buffer, Dissolve, Union, Intersect, and Erase tools to isolate suitable parcels.
                         </li>
                         <li>
                             <strong>Advanced Spatial Joins:</strong> 
-                            Synthesized disparate datasets through spatial relationships to perform deeper geographic analysis.
+                            Synthesized disparate datasets—including transit hubs and socioeconomic zones—to perform deeper geographic analysis.
                         </li>
                         <li>
                             <strong>Cartographic Labeling:</strong> 
