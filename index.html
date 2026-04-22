@@ -7,222 +7,221 @@
         <meta name="author" content="Erika Diaz" />
         <title>Erika Diaz ArcGIS Project</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <link href="css/styles.css" rel="stylesheet" />
-<style>
-    /* Custom styles for ArcGIS sections */
-    .map-section {
-        padding: 80px 0;
-        border-bottom: 1px solid #dee2e6;
-    }
-    .content-box {
-        border: 2px solid #555555; 
-        padding: 25px;
-        margin-bottom: 20px;
-        border-radius: 8px;
-        background-color: #ffffff;
-    }
-    .map-img {
-        width: 90%;
-        height: auto;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .bg-custom-light {
-        background-color: #fcfcfc;
-    }
-
-/* This targets the logo specifically and overrides everything else */
-.header-logo {
-    width: 100px !important; /* Adjust this value to your preferred size */
-    height: auto !important;
-    max-width: 100% !important; /* Ensures it doesn't break on mobile */
-    margin-bottom: 15px !important;
-    display: inline-block !important;
-}
-
-/* Ensure the header background remains dark */
-header.portfolio-header {
-    background-color: #001f3f !important;
-    background-image: none !important;
-}
-
-</style>
-
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         
+        <style>
+            /* Global Font Matching */
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #333;
+                line-height: 1.6;
+            }
+
+            h1, h5, .navbar-brand {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                letter-spacing: 0.5px;
+            }
+
+            /* Consistent Map Sections */
+            .map-section {
+                padding: 100px 0;
+                border-bottom: 1px solid #dee2e6;
+                display: flex;
+                align-items: center; /* Vertical alignment */
+            }
+
+            /* Ensures images fill the column space and match the text height better */
+            .map-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+            }
+
+            .map-img {
+                width: 100%;
+                height: auto;
+                max-height: 600px; /* Prevents maps from becoming too tall on large screens */
+                object-fit: contain;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+                transition: transform 0.3s ease;
+            }
+
+            .map-img:hover {
+                transform: scale(1.01);
+            }
+
+            .content-box {
+                border: 1px solid #e0e0e0; 
+                padding: 30px;
+                margin-bottom: 20px;
+                border-radius: 12px;
+                background-color: #ffffff;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            }
+
+            .skills-list {
+                padding-left: 0;
+                list-style: none;
+            }
+
+            .skills-list li {
+                margin-bottom: 15px;
+                font-size: 0.95rem;
+                position: relative;
+                padding-left: 1.5rem;
+            }
+
+            .skills-list li::before {
+                content: "■";
+                color: #001f3f;
+                position: absolute;
+                left: 0;
+                font-size: 0.8rem;
+                top: 2px;
+            }
+
+            .bg-custom-light {
+                background-color: #f8f9fa;
+            }
+
+            /* Header Branding */
+            header.portfolio-header {
+                background-color: #001f3f !important;
+                padding: 100px 0;
+            }
+
+            .header-logo {
+                width: 120px;
+                height: auto;
+                margin-bottom: 20px;
+            }
+
+            footer {
+                font-size: 0.9rem;
+                letter-spacing: 1px;
+            }
+        </style>
     </head>
     <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Erika Diaz</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.linkedin.com/in/erikamaediaz/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-        
-<header class="py-5 bg-image-full portfolio-header">
-    <div class="container text-center my-5">
-<img src="https://cla.temple.edu/tech-notes/assets/img/arcgis-pro.png" 
-     alt="ArcGIS Logo" 
-     style="width: 300px !important; height: auto !important; display: block !important; margin: 0 auto 15px !important;">
-        <h1 class="text-white fs-3 fw-bolder">Fundamentals of GIS Final Project</h1>
-        <!--<p class="text-white-50 mb-0">Fundamentals of GIS Final Project</p> -->
-    </div>
-</header>
-
-
-
-        
-<section class="map-section">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <img src="https://github.com/errr07/errr07.github.io/raw/main/assets/Global%20Projections.png" alt="Comparison of Global Map Projections" class="map-img" />
-            </div>
-            <div class="col-lg-5">
-                <div class="content-box">
-                    <h5 class="mb-3"><strong>Analysis Overview</strong></h5>
-                    <p>This project explores how map projections influence our perception of geographic "truth." Because a 3D sphere cannot be perfectly flattened, every projection inherently distorts area, direction, or distance. As an analyst, choosing the correct projection is critical to ensuring data-driven conclusions are accurate.</p>
-                    
-                    <ul class="list-unstyled small">
-                        <li class="mb-2"><strong>Robinson:</strong> A compromise projection that distorts everything slightly to create a visually "natural" look, representing poles as lines rather than points.</li>
-                        <li class="mb-2"><strong>Goode Homolosine:</strong> Minimizes land distortion by "interrupting" the oceans, maintaining accurate proportions at the expense of map continuity.</li>
-                        <li class="mb-2"><strong>Mercator:</strong> Preserves angles for navigation but severely inflates the size of regions near the poles, making Greenland and Alaska appear disproportionately large.</li>
-                        <li><strong>Bonne:</strong> A pseudoconic projection that creates a heart-shaped map; distortion increases significantly as you move away from the central meridian.</li>
-                    </ul>
-                </div>
-                
-                <div class="content-box">
-                    <h5 class="mb-3"><strong>Skills Learned</strong></h5>
-                    <ul class="skills-list">
-                        <li>
-                            <strong>Map Projections & CRS:</strong> 
-                            Mastered coordinate systems and understood the visual and mathematical impact of different global projections.
-                        </li>
-                        <li>
-                            <strong>Defining vs. Projecting:</strong> 
-                            Learned the technical distinction between defining a missing projection and converting (re-projecting) an existing CRS.
-                        </li>
-                        <li>
-                            <strong>ArcGIS Pro Proficiency:</strong> 
-                            Advanced technical skills in layout creation, layer customization, and multi-layer data management.
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">ERIKA DIAZ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/erikamaediaz/" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-linkedin"></i> LinkedIn
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </nav>
 
-
-
-        
-        
-<section class="map-section bg-custom-light">
-    <div class="container">
-        <div class="row align-items-center flex-lg-row-reverse">
-            <div class="col-lg-7">
-                <img src="https://raw.githubusercontent.com/errr07/errr07.github.io/main/assets/Lab6.png" alt="Philadelphia Healthy Food Store Suitability Map" class="map-img" />
+        <header class="portfolio-header text-center">
+            <div class="container">
+                <img src="https://cla.temple.edu/tech-notes/assets/img/arcgis-pro.png" alt="ArcGIS Logo" class="header-logo">
+                <h1 class="text-white display-5 fw-bolder">Fundamentals of GIS Final Project</h1>
             </div>
-            <div class="col-lg-5">
-                <div class="content-box">
-                    <h5 class="mb-3"><strong>Analysis Overview</strong></h5>
-                    <p>This analysis identifies optimal locations for new healthy food retailers in Philadelphia. The workflow utilizes multi-criteria decision-making to find areas that maximize community impact and accessibility while avoiding market saturation.</p>
-                    
-                    <p class="small mb-2"><strong>Spatial Criteria Applied:</strong></p>
-                    <ul class="list-unstyled small">
-                        <li class="mb-1"><i class="bi bi-check2-circle text-success"></i> <strong>Investment:</strong> Must be within a Philadelphia Empowerment Zone.</li>
-                        <li class="mb-1"><i class="bi bi-check2-circle text-success"></i> <strong>Transit Access:</strong> Within 2,000 feet of a subway or regional rail station.</li>
-                        <li class="mb-1"><i class="bi bi-x-circle text-danger"></i> <strong>Market Gap:</strong> Not within 1,200 feet of existing farmers markets or Healthy Corner Stores.</li>
-                        <li><i class="bi bi-plus-circle text-primary"></i> <strong>Scale:</strong> Prioritized larger contiguous areas to facilitate property acquisition.</li>
-                    </ul>
-                </div>
-                
-                <div class="content-box">
-                    <h5 class="mb-3"><strong>Skills Learned</strong></h5>
-                    <ul class="skills-list">
-                        <li>
-                            <strong>Vector Analysis Operations:</strong> 
-                            Executed complex spatial workflows using Buffer, Dissolve, Union, Intersect, and Erase tools to isolate suitable parcels.
-                        </li>
-                        <li>
-                            <strong>Advanced Spatial Joins:</strong> 
-                            Synthesized disparate datasets—including transit hubs and socioeconomic zones—to perform deeper geographic analysis.
-                        </li>
-                        <li>
-                            <strong>Cartographic Labeling:</strong> 
-                            Utilized dynamic labeling and expressions to effectively communicate and highlight specific areas of interest.
-                        </li>
-                        <li>
-                            <strong>Map Design Excellence:</strong> 
-                            Iterated on map layouts to improve clarity, symbology, and overall visual storytelling in ArcGIS.
-                        </li>
-                    </ul>
+        </header>
+
+        <section class="map-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 map-container">
+                        <img src="https://github.com/errr07/errr07.github.io/raw/main/assets/Global%20Projections.png" alt="Global Projections" class="map-img" />
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="content-box">
+                            <h5 class="mb-3 text-dark fw-bold">Analysis Overview</h5>
+                            <p class="small">This project explores how map projections influence our perception of geographic "truth." Because a 3D sphere cannot be perfectly flattened, every projection inherently distorts area, direction, or distance.</p>
+                            <ul class="list-unstyled small border-top pt-2">
+                                <li class="mb-2"><strong>Robinson:</strong> A natural-looking compromise; curved poles.</li>
+                                <li class="mb-2"><strong>Goode Homolosine:</strong> Interrupted oceans; accurate land proportions.</li>
+                                <li class="mb-2"><strong>Mercator:</strong> Navigational angles preserved; polar size inflation.</li>
+                                <li><strong>Bonne:</strong> Heart-shaped; distortion increases from center.</li>
+                            </ul>
+                        </div>
+                        <div class="content-box">
+                            <h5 class="mb-3 text-dark fw-bold">Skills Learned</h5>
+                            <ul class="skills-list small">
+                                <li><strong>Map Projections & CRS:</strong> Mastered coordinate systems and mathematical impacts.</li>
+                                <li><strong>Defining vs. Projecting:</strong> Technical distinction between defining and converting CRS.</li>
+                                <li><strong>ArcGIS Pro Proficiency:</strong> Advanced layout and layer management.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-
-
-<section class="map-section">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <img src="https://raw.githubusercontent.com/errr07/errr07.github.io/main/assets/Lab3.png" alt="Spatial Distribution of Hispanic Population in the U.S. 2010" class="map-img" />
-            </div>
-            <div class="col-lg-5">
-                <div class="content-box">
-                    <h5 class="mb-3"><strong>Analysis Overview</strong></h5>
-                    <p>This project visualizes the spatial distribution of the Hispanic population across the contiguous United States using 2010 U.S. Census data. By aggregating demographic data at the state level, this map highlights significant regional concentrations, particularly in the Southwest, Florida, and major metropolitan corridors.</p>
-                    <p class="small">The analysis demonstrates how thematic mapping—specifically the use of normalized color scales and dot density—can reveal patterns of migration and settlement that are often obscured in raw tabular data.</p>
-                </div>
-                <div class="content-box">
-                    <h5 class="mb-3"><strong>Skills Learned</strong></h5>
-                    <ul class="skills-list">
-                        <li>
-                            <strong>Thematic Mapping Techniques:</strong> 
-                            Proficient in designing Dot Density and Choropleth maps to visualize population distribution and density effectively.
-                        </li>
-                        <li>
-                            <strong>Census Data Integration:</strong> 
-                            Applied advanced knowledge of Census Bureau datasets within a geospatial context to analyze and present demographic trends.
-                        </li>
-                        <li>
-                            <strong>Dynamic Map & Layout Linking:</strong> 
-                            Mastered the relationship between map views and layout elements, ensuring legends and scales update dynamically to maintain cartographic integrity.
-                        </li>
-                        <li>
-                            <strong>Multi-Layer Data Management:</strong> 
-                            Organized and filtered complex geographic data layers to produce clear, actionable insights for demographic analysis.
-                        </li>
-                    </ul>
+        <section class="map-section bg-custom-light">
+            <div class="container">
+                <div class="row align-items-center flex-lg-row-reverse">
+                    <div class="col-lg-7 map-container">
+                        <img src="https://raw.githubusercontent.com/errr07/errr07.github.io/main/assets/Lab6.png" alt="Philadelphia Suitability" class="map-img" />
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="content-box">
+                            <h5 class="mb-3 text-dark fw-bold">Analysis Overview</h5>
+                            <p class="small">Multi-criteria decision-making to identify optimal locations for healthy food retailers in Philadelphia based on urban policy requirements.</p>
+                            <ul class="list-unstyled small border-top pt-2">
+                                <li class="mb-1"><i class="bi bi-check2-circle text-success"></i> <strong>Investment:</strong> Within Empowerment Zones.</li>
+                                <li class="mb-1"><i class="bi bi-check2-circle text-success"></i> <strong>Transit:</strong> Within 2,000ft of rail stations.</li>
+                                <li class="mb-1"><i class="bi bi-x-circle text-danger"></i> <strong>Market Gap:</strong> 1,200ft buffer from existing stores.</li>
+                            </ul>
+                        </div>
+                        <div class="content-box">
+                            <h5 class="mb-3 text-dark fw-bold">Skills Learned</h5>
+                            <ul class="skills-list small">
+                                <li><strong>Vector Analysis:</strong> Buffer, Dissolve, Union, Intersect, and Erase workflows.</li>
+                                <li><strong>Advanced Spatial Joins:</strong> Synthesizing transit and socioeconomic datasets.</li>
+                                <li><strong>Cartographic Labeling:</strong> Using dynamic expressions for interest areas.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
+        <section class="map-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 map-container">
+                        <img src="https://raw.githubusercontent.com/errr07/errr07.github.io/main/assets/Lab3.png" alt="U.S. Census Data" class="map-img" />
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="content-box">
+                            <h5 class="mb-3 text-dark fw-bold">Analysis Overview</h5>
+                            <p class="small">Visualizing the spatial distribution of the Hispanic population in the contiguous U.S. using 2010 Census data. Highlights regional concentrations in the Southwest and Florida.</p>
+                            <p class="small border-top pt-2 text-muted italic">Uses normalized color scales and dot density to reveal patterns of settlement obscured in raw tables.</p>
+                        </div>
+                        <div class="content-box">
+                            <h5 class="mb-3 text-dark fw-bold">Skills Learned</h5>
+                            <ul class="skills-list small">
+                                <li><strong>Thematic Mapping:</strong> Proficient in Dot Density and Choropleth design.</li>
+                                <li><strong>Census Integration:</strong> Applying federal datasets to demographic trends.</li>
+                                <li><strong>Layout Linking:</strong> Dynamic legend and scale bar management.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-
-
-        
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Temple University </p></div>
+            <div class="container">
+                <p class="m-0 text-center text-white-50">Copyright &copy; Temple University | Erika Diaz 2026</p>
+            </div>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
